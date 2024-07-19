@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    margin-top: 86px;
+    margin-left: 388px;
+    z-index: -1;
+}
+  
+  .stars-img {
+    width: 514px;
+    height: 297px;
+    margin-top:26px;
+    margin-left: 410px;
+}
+  
+  .vector-img {
+    position: absolute;
+    margin-top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200.43px;
+    height: 201px;
+    z-index: 1;
+}
+
+.hurray{
+    width: 464px;
+    height: 86px;
+    margin-top: 30px;
+    margin-left: 456px;
+    font-family: Roboto;
+    font-size: 91px;
+    font-weight: 600;
+    line-height: 106.64px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #FFF;
+}
+
+h3{
+    width: 457px;
+    height: 48px;
+    margin-top: 20px;
+    margin-left: 462px;
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48.05px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #FFF;
+}
+
+.play-again {
+    background: #fff;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 0.6rem;
+    color: #656565;
+    padding: 0.6rem 3.5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    text-transform: inherit;
+    font-size: 1.3rem;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    margin-left: 562px;
+    margin-top: 10px;
+}
+
+.rules-btn{
+    background: none;
+    outline: none;
+    border: 2px solid #FFFFFF;
+    border-radius: 0.6rem;
+    padding: 0.4rem 3.5rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    color: #FFFFFF;
+    margin-left: 1110px;
+}
+
+.modal {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    margin-top: 200px;
+    margin-left: 900px;
+    display: grid;
+    place-items: left;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+  }
+  
+  .modal__header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 2rem 2rem 1rem;
+  }
+  
+  .game-rules{
+    position: relative;
+    background-color: #004429;
+    width: 278px;
+    height: 300px;
+    margin-left: 110px;
+    border: 7px solid #FFFFFF;
+    border-radius: 13px;
+    font-family: "Roboto", sans-serif;
+    color: #FFFFFF;
+    font-size: small;
+    z-index: -1;
+  }
+  
+  .game-rules h1{
+    z-index: -1;
+    text-align: center;
+    font-size: 29px;
+    font-weight: 500;
+  }
+  
+  .game-rules li{
+    z-index: -1;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-left: 30px;
+    text-align: left;
+    list-style-type: square;
+    letter-spacing: 0.5px;
+  }
+  
+  li::marker{
+    font-size: 1.8em;
+    line-height: 0.1;
+    color: #FFD600;
+  }
+  
+  .close-btn{
+    top: -25px;
+    margin-left: 370px;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    border: 5px;
+    background: #FF0000;
+    border-radius: 50px;
+    border: 5px solid #FFFFFF;
+    font-size: 50px;
+    font-family: "Dangrek", sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .show-modal {
+    opacity: 1;
+    pointer-events: initial;
+  }

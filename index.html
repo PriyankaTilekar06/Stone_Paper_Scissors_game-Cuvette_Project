@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dangrek&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="preload" >
+    <div class="container">
+      <header class="header">
+        <div class="box-container">
+          <div class="box1">
+            <h1>ROCK</h1>
+            <h1>PAPER</h1>
+            <h1>SCISSORS</h1>
+          </div>
+          <div class="box2">
+            COMPUTER SCORE
+            <h1 class="computer__number">0</h1>
+          </div>
+          <div class="box3 score__number">
+            &nbsp; YOUR &nbsp; SCORE
+            <h1 class="your__number">0</h1>
+          </div>
+        </div>
+      
+      </header>
+      <section class="game">
+        <button class="choice-btn" data-choice="paper">
+          <div class="choice paper">
+            <img src="Group-paper.png" alt="Paper" />
+          </div>
+        </button>
+        <img class="straight-line" src="Line 1.png" alt="scissors img" />
+        <button class="choice-btn" data-choice="scissors">
+          <div class="choice scissors">
+            <img src="Group-scissors.png" alt="Scissors" />
+          </div>
+        </button>
+        <button class="choice-btn" data-choice="rock">
+          <div class="choice rock">
+            <img src="Group-rock.png" alt="Rock" />
+          </div>
+        </button>
+        <img class="cross-line1" src="Line 3.png" alt="" />
+        <img class="cross-line2" src="Line 2.png" alt="" />
+      </section>
+    </div>
+
+    <section class="results hidden">
+      <h2 class="results__heading">YOU PICKED</h2>
+      <h2 class="results__heading">PC PICKED</h2>
+      <div class="results__result"></div>
+      <div class="results__winner hidden">
+        <h3 class="results__text"></h3>
+        <button class="play-again">PLAY AGAIN</button>
+      </div>
+      <div class="results__result"></div>
+    </section>
+
+    <div class="btn-container">
+      <button class="rules-btn" tabindex="1">Rules</button>
+      <a href="winner.html"><button class="next-btn hidden">NEXT</button></a>
+    </div>
+    
+    <div class="modal">
+      <div class="modal__container">
+        <header class="modal__header">
+          <h2 class="modal__heading"></h2>
+          <button class="close-btn">
+            X
+          </button>
+        </header>
+        <div class="game-rules">
+          <h1>Game Rules</h1>
+          <ul>
+            <li>
+              Rock beats scissors, scissors beat paper, and paper beats rock.
+            </li>
+            <li>
+              Agree ahead of time whether you’ll count off “rock, paper, scissors,
+              shoot” or just “rock, paper, scissors.”
+            </li>
+            <li>
+              Use rock, paper, scissors to settle minor decisions or simply play
+              to pass the time
+            </li>
+            <li>
+              If both players lay down the same hand, each player lays down
+              another hand
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
